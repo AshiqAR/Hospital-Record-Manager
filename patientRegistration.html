@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Registration</title>
+    <link rel="stylesheet" href="./css/registrationStyle.css">
+
+    <script src="./js/script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <nav id="navbar">
+            <div class="projName">
+                HAND [Hospital Assistance Native Database]
+            </div>
+
+            <div class="other">
+                <ul class="navItems">
+                    <li onclick="clicked('Home')" id="Home">Home</li>
+                    <li onclick="displayRoleDropdown()" id="signInOrSignUp">
+                        Sign In
+                        <div id="roleDropdown" class="dropdown" >
+                            <a href="patientLogin.html">Patient</a>
+                            <a href="receptionLogin.html" >Receptionist</a>
+                            <a href="doctorLogin.html" >Doctor</a>
+                            <a href="adminLogin.html" >Admin</a>
+                        </div>
+                    </li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h3 class="item" id="item1">Patient Details</h3>
+        
+        <p class="item" id="item2">Name</p>
+        <input class="item" type="text" id="item3">
+
+        <p class="item" id="item4">Mobile Number</p>
+        <input class="item" type="text" id="item5" pattern="[1-9]{1}[0-9]{9}">
+
+        <p class="item" id="email">Email</p>
+        <input class="item" type="email" id="emailId">
+
+        <p class="item" id="item6">Date of Birth</p>
+        <input class="item" type="date" id="item7">
+
+        <p class="item" id="item8">Gender</p>
+        <select name="gender" id="gender" class="item" >
+            <option value="">-select-</option>
+            <option value="M">Male</option>
+            <option value="F">Female</option>
+            <option value="N">Prefer Not Say</option>
+        </select>
+
+        <p class="item" id="item10">Address</p>
+        <textarea spellcheck="false" class="item" name="" id="item11" cols="30" rows="4"></textarea>
+
+        <p class="item" id="item12">Password</p>
+        <input class="item" type="password" name="" id="item13">
+
+        <div class="item" id="blank"></div>
+        <div class="item" id="item15"><button   id="signUp-btn">SIGN UP</button></div>
+        
+    </div>
+    
+
+</body>
+</html>
