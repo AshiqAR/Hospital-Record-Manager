@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/indexStyle.css">
+    <style>
+        *{
+            font-family: 'Noto Sans', sans-serif;
+            margin: 0px;
+            padding: 0px;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans&family=Roboto:wght@400;700;900&display=swap');
+    </style>
+
+    <script src="./js/script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <nav id="navbar">
+            <div class="projName">
+                HAND [Hospital Assistance Native Database]
+            </div>
+
+            <div class="other">
+                <ul class="navItems">
+                    <li onclick="clicked('Home')" id="Home">Home</li>
+                    <li onclick="displayRoleDropdown()" id="signInOrSignUp">
+                        Sign In
+                        <div id="roleDropdown" class="dropdown" >
+                            <a href="patientLogin.html">Patient</a>
+                            <a href="receptionLogin.html" >Receptionist</a>
+                            <a href="" >Doctor</a>
+                            <a href="adminLogin.html">Admin</a>
+                        </div>
+                    </li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="container" >
+        <div class="loginIcon">
+            <img src="img/hd-man-user-illustration-icon-transparent-png-11640168385tqosatnrny.png" alt="" id="userLogo">
+            <p id="login">Doctor Login</p>
+        </div>
+
+        <div class="form">
+            
+        </div>
+        <button id="btn">Sign In</button>
+    </div>
+</body>
+</html>
