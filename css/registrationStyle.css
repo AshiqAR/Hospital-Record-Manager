@@ -38,8 +38,6 @@
     color: #ffecf4;
     display: flex;
     justify-content: space-between;
-    position: fixed;
-    width: 100%;
     z-index: 10;
 }
 
@@ -110,84 +108,68 @@ body{
     /* opacity: 98%; */
 }
 
-
 .container{
-    display: grid ;
-    background-color: rgba(0, 0, 0, 0.568);
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    grid-gap: 10px;
+    background-color: rgba(0, 0, 0, 0.539);
     color: white;
-    grid-template-columns: 1fr 1fr 2fr;
+    padding-bottom: 40px;
+    padding-top: 25px;
+    padding-left: 20px;
+}
+
+#heading{
+    display: inline-block;
+    padding: 18px 108px;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.form{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
     grid-gap: 20px;
-    padding: 16px 13px;
-    position: absolute;
-    top: 40px;
-    z-index: 5;
-    /* height: 100%; */
+}
+
+label{
+    margin-left: 25px;
 }
 
 .item{
-    padding: 5px 5px;
+    padding: 5px 4px;
 }
 
-#item1{
-    grid-column-start: 1;
-    grid-column-end: 5;
-    height: 40px;
-    padding: 10px 8px;
-    font-size: 25px;
-    text-align: left;
+input ,select, textarea{
+    border: none;
+    border-radius: 3px;
+    background-color: #e3fff0bd;
 }
 
-#blank{
-    grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row-start: 2;
-    grid-row-end: 8;
+input:focus ,select:focus, textarea:focus{
+    outline: none;
+    box-shadow: 0px 0px 2px 4px rgba(46, 138, 244, 0.635);
 }
 
-#item15{
-    grid-column-start: 1;
-    grid-column-end: 3;
-    display: flex;
-    justify-content: center;
-    margin: 30px 0px;
+textarea{
+    resize: none;
 }
 
-#signUp-btn{
-    width: 100px;
-    height: 30px;
+
+.btn{
+    margin: 5px auto;
+    padding: 7px 15px;
     border-radius: 6px;
+    font-size: 14px;
     border: none;
     color: white;
     background-color: #0b850bd4;
-    
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
-#signUp-btn:hover{
+.btn:hover{
     border-radius: 6px;
     border: none;
     background-color: rgb(0, 159, 0);
     cursor: pointer;
-}
-
-input{
-    border-radius: 5px;
-    color: black;
-    font-weight:600;
-}
-
-input:focus ,input:active{
-    outline: none;
-    box-shadow: 1px 1px 10px 3px rgba(52, 83, 50, 0.858) ;
-}
-
-textarea , select{
-    border-radius: 5px;
-    color: black;
-    font-weight:600;
-    resize: none;
-}
-
-textarea:active , textarea:focus{
-    outline: none;
-    box-shadow: 1px 1px 10px 3px rgba(52, 83, 50, 0.858) ;
-    
 }

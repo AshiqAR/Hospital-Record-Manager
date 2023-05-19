@@ -35,39 +35,45 @@
     </header>
 
     <div class="container">
-        <h3 class="item" id="item1">Patient Details</h3>
+
+        <h2 id="heading" >Patient Details</h2>
         
-        <p class="item" id="item2">Name</p>
-        <input class="item" type="text" id="item3">
-
-        <p class="item" id="item4">Mobile Number</p>
-        <input class="item" type="text" id="item5" pattern="[1-9]{1}[0-9]{9}">
-
-        <p class="item" id="email">Email</p>
-        <input class="item" type="email" id="emailId">
-
-        <p class="item" id="item6">Date of Birth</p>
-        <input class="item" type="date" id="item7">
-
-        <p class="item" id="item8">Gender</p>
-        <select name="gender" id="gender" class="item" >
-            <option value="">-select-</option>
+        <form action="" class="form" id="userRegistrationForm">
+            <label for="name" class="item">Name</label>
+            <input type="text" class="item" required>
+            <!-- <br> -->
+            
+            <label for="dob" class="item">Date of Birth</label>
+            <input type="date" class="item" required>
+            <!-- <br> -->
+            
+        <label for="gender" class="item">Gender</label>
+        <select name="gender" id="" class="item" required>
+            <option value="NULL">- select -</option>
             <option value="M">Male</option>
             <option value="F">Female</option>
-            <option value="N">Prefer Not Say</option>
+            <option value="N">Prefer not Say</option>
         </select>
-
-        <p class="item" id="item10">Address</p>
-        <textarea spellcheck="false" class="item" name="" id="item11" cols="30" rows="4"></textarea>
-
-        <p class="item" id="item12">Password</p>
-        <input class="item" type="password" name="" id="item13">
-
-        <div class="item" id="blank"></div>
-        <div class="item" id="item15"><button   id="signUp-btn">SIGN UP</button></div>
+        <!-- <br> -->
         
-    </div>
-    
+        <label for="mobileno" class="item">Mobile Number</label>
+        <input type="text" class="item" pattern="[1-9]{1}[0-9]{9}" placeholder="Enter 10 digit Mobile Number" title="Please enter 10 digit mobile number" required>
+        <!-- <br> -->
+        
+        <label for="email" class="item">Email</label>
+        <input type="email" class="item" required>
+        <!-- <br> -->
 
+        <label for="address" class="item">Address</label>
+        <textarea name="" id="address"  rows="4" class="item"></textarea>
+
+        <label for="password">Password</label>
+        <input type="text" class="item" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*\d).{8,}" title="Enter Strong Password" required>
+
+        <button type="submit" class="btn" >SIGN UP</button>
+        <!-- <br> -->
+    </form>
+    
+</div>
 </body>
 </html>
