@@ -1,3 +1,11 @@
+*{
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans&family=Roboto:wght@400;700;900&display=swap');
+
+
 .header::before{
     content: "";
     background-image: url(../img/bg1.jpg);
@@ -26,6 +34,7 @@
 
 .projName{
     display: inline-block;
+    font-size: 15px;
 }
 
 .other{

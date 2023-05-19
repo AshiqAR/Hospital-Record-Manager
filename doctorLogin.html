@@ -6,14 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="css/indexStyle.css">
-    <style>
-        *{
-            font-family: 'Noto Sans', sans-serif;
-            margin: 0px;
-            padding: 0px;
-        }
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans&family=Roboto:wght@400;700;900&display=swap');
-    </style>
 
     <script src="./js/script.js"></script>
 </head>
@@ -50,9 +42,16 @@
         </div>
 
         <div class="form">
-            
+            <div class="formItem">
+                <p class="item">DOCTOR ID  </p>
+                <input type="text" name="user-name" class="item" id="" placeholder="">
+            </div>
+            <div class="formItem">
+                <p class="item">PASSWORD  </p>
+                <input type="password" name="password" id="" class="item" placeholder="">
+            </div>
         </div>
-        <button id="btn">Sign In</button>
+        <button class="btn" id="signInbtn">SIGN IN</button>
     </div>
 </body>
 </html>
