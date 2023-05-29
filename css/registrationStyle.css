@@ -173,3 +173,8 @@ textarea{
     background-color: rgb(0, 159, 0);
     cursor: pointer;
 }
+
+#proj-a{
+    color: white;
+    text-decoration: none;
+}

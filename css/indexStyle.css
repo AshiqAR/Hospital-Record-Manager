@@ -37,6 +37,12 @@
     font-size: 15px;
 }
 
+#proj-a{
+    color: white;
+    text-decoration: none;
+    
+}
+
 .other{
     display: inline-block;
 }

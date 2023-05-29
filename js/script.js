@@ -3,7 +3,7 @@ function displayRoleDropdown() {
 }
 
 // Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
+window.onclick = function (event) {
     if (!event.target.matches('#signInOrSignUp')) {
         var dropdowns = document.getElementsByClassName("dropdown");
         var i;
@@ -17,13 +17,13 @@ window.onclick = function(event) {
 }
 
 
-function clicked(role){
-    if(role == 'Home'){
+function clicked(role) {
+    if (role == 'Home') {
         console.log("home");
-        window.location.href = 'home.html';
+        window.location.href = 'index.html';
     }
     else {
-        if(role == 'Patient'){
+        if (role == 'Patient') {
             console.log('patient');
             window.location.href = 'loginScreen.html';
         }
